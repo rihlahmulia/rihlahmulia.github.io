@@ -5,6 +5,34 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap CSS -->
+  <style>
+    /* Custom CSS for hover dropdown */
+    .dropdown:hover .dropdown-menu {
+      display: block;
+      margin-top: 0; /* Adjust if needed */
+    }
+
+    /* Remove background and border */
+    .dropdown-menu {
+      background-color: transparent;
+      border: none;
+    }
+
+    .dropdown-item {
+      color: #000; /* Change to desired text color */
+    }
+
+    .dropdown-item:hover {
+      background-color: rgba(0, 0, 0, 0.1); /* Optional: change hover background color for dropdown items */
+    }
+  </style>
+
+
+
 
 
     <!-- ===============================================-->
@@ -40,18 +68,29 @@
     <!-- ===============================================-->
     <main class="main" id="top">
       <nav class="navbar navbar-expand-lg navbar-light fixed-top py-5 d-block" data-navbar-on-scroll="data-navbar-on-scroll">
-        <div class="container"><a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" height="34" alt="logo" /></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"> </span></button>
+        <div class="container">
+          <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" height="34" alt="logo" /></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
           <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto pt-2 pt-lg-0 font-base align-items-lg-center align-items-start">
-              <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium"  href="index.html#destination">layanan</a></li>
+              <li class="nav-item dropdown px-3 px-xl-4">
+                <a class="nav-link dropdown fw-medium" href="#" id="navbarDropdown"  data-bs-toggle="dropdown">Layanan</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="umroh.html">umroh</a></li>
+                  <li><a class="dropdown-item" href="#!">Wisata Halal</a></li>
+                  <li><a class="dropdown-item" href="#!">Mountain Trip</a></li>
+                </ul>
+              </li>
               <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="#testimonial">Testimoni</a></li>
               <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="#!">Blog</a></li>
-
+              
             </ul>
           </div>
         </div>
       </nav>
+      
       <section style="padding-top: 7rem;">
         <div class="bg-holder" style="background-image:url(assets/img/hero/hero-bg.svg);">
         </div>
@@ -383,15 +422,14 @@
 
         <div class="container">
           <div class="py-8 px-5 position-relative text-center" style="background-color: rgba(223, 215, 249, 0.199);border-radius: 129px 20px 20px 20px;">
-            <div class="position-absolute start-100 top-0 translate-middle ms-md-n3 ms-n4 mt-3"> <img src="assets/img/cta/send.png" style="max-width:70px;" alt="send icon" /></div>
+            <div class="position-absolute start-100 top-0 translate-middle ms-md-n3 ms-n4 mt-3"> <img src="assets/img/cta/question.png" style="max-width:70px;" alt="send icon" /></div>
             <div class="position-absolute end-0 top-0 z-index--1"> <img src="assets/img/cta/shape-bg2.png" width="264" alt="cta shape" /></div>
             <div class="position-absolute start-0 bottom-0 ms-3 z-index--1 d-none d-sm-block"> <img src="assets/img/cta/shape-bg1.png" style="max-width: 340px;" alt="cta shape" /></div>
             <div class="row justify-content-center">
               <div class="col-lg-8 col-md-10">
-                <h2 class="text-secondary lh-1-7 mb-7">Wujudkan Ibadah Umroh yang Khusyuk dan Wisata Halal yang Menginspirasi, hanya bersama Rihlah Mulia </h2>
-                <div class="col-sm-auto">
-                  <button class="btn btn-danger orange-gradient-btn fs--1">Daftar</button>
-                </div>
+                <h2 class="text-secondary lh-1-7 mb-7">Jadi Umroh tanggal berapa? </h2>
+                <a class="col-sm-auto" aria-label="Chat Via WhatsApp" href="https://wa.me/6288908898492?text=السلام عليكم%20,Saya%20Insya Allah%20Mau Umroh"><img alt="Chat Via WhatsApp" src="assets/img/cta/WhatsAppButtonGreenLarge.svg" />
+                </a>
                 
               </div>
             </div>

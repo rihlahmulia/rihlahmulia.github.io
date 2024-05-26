@@ -5,7 +5,28 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <style>
+      /* Custom CSS for hover dropdown */
+      .dropdown:hover .dropdown-menu {
+        display: block;
+        margin-top: 0; /* Adjust if needed */
+      }
+  
+      /* Remove background and border */
+      .dropdown-menu {
+        background-color: transparent;
+        border: none;
+      }
+  
+      .dropdown-item {
+        color: #000; /* Change to desired text color */
+      }
+  
+      .dropdown-item:hover {
+        background-color: rgba(0, 0, 0, 0.1); /* Optional: change hover background color for dropdown items */
+      }
+    </style>
+  
 
     <!-- ===============================================-->
     <!--    Document Title-->
@@ -40,14 +61,19 @@
     <!-- ===============================================-->
     <main class="main" id="top">
       <nav class="navbar navbar-expand-lg navbar-light fixed-top py-5 d-block" data-navbar-on-scroll="data-navbar-on-scroll">
-        <div class="container"><a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" height="34" alt="logo" /></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"> </span></button>
+        <div class="container">
+          <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" height="34" alt="logo" /></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
           <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto pt-2 pt-lg-0 font-base align-items-lg-center align-items-start">
-              <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="#destination">layanan</a></li>
+              <li class="nav-item dropdown px-3 px-xl-4">
+                <a class="nav-link fw-medium" aria-current="page" href="index.html#destination" >Layanan</a>
+              </li>
               <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="#testimonial">Testimoni</a></li>
               <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="#!">Blog</a></li>
-
+              
             </ul>
           </div>
         </div>
@@ -95,7 +121,7 @@
               <div class="card overflow-hidden shadow"> <img class="card-img-top" src="assets/img/dest/dest2.jpg" alt="Kuala Lumpur, Malaysia" />
                 <div class="card-body py-4 px-3">
                   <div class="d-flex flex-column flex-lg-row justify-content-between mb-3">
-                    <h4 class="text-secondary fw-medium"><a class="link-900 text-decoration-none stretched-link" href="#!">Kuala Lumpur, Malaysia</a></h4><span class="fs-1 fw-medium">Mulai Dari 3,6Jt</span>
+                    <h4 class="text-secondary fw-medium"><a class="link-900 text-decoration-none stretched-link" href="#!">Halal </br> Tour</a></h4><span class="fs-1 fw-medium">Mulai Dari 3,6Jt</span>
                   </div>
                   <div class="d-flex align-items-center"> <img src="assets/img/dest/navigation.svg" style="margin-right: 14px" width="20" alt="navigation" /><span class="fs-0 fw-medium">3 Hari</span></div>
                 </div>
@@ -237,9 +263,9 @@
             <div class="row justify-content-center">
               <div class="col-lg-8 col-md-10">
                 <h2 class="text-secondary lh-1-7 mb-7">Wujudkan Ibadah Umroh yang Khusyuk dan Wisata Halal yang Menginspirasi, hanya bersama Rihlah Mulia </h2>
-                <div class="col-sm-auto">
-                  <button class="btn btn-danger orange-gradient-btn fs--1">Daftar</button>
-                </div>
+                <a class="col-sm-auto" aria-label="Chat Via WhatsApp" href="https://wa.me/6288908898492?text=السلام عليكم%20,Saya%20Insya Allah%20Mau Umroh"><img alt="Chat Via WhatsApp" src="assets/img/cta/WhatsAppButtonGreenLarge.svg" />
+                  </a>
+                
                 
               </div>
             </div>
